@@ -1,185 +1,38 @@
 
 
-.wd-tuiter-bg {
-    background-color: black;
-    padding-left: 16px;
+.wd-trending-topic {
+    color: gray;
+}
+
+.wd-username {
+    font-weight: bold;
+}
+
+.wd-time {
+    color: gray;
+}
+
+.wd-number-of-tuits {
+    color: gray;
 }
 
 .wd-search-bar {
-    background-color: darkgray;
-    color: white;
-    margin-right: 12px;
-    margin-bottom: 25px;
-
-
+    border-radius: 25px;
 }
 
-.wd-link {
-    padding: 16px
+/* note: I consulted the following StackOverflow post on how to embed an icon in the background
+   of a search bar:
+
+   https://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form
+ */
+.wd-search-icon {
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png");
+    background-size: 20px;
 }
 
-.wd-unhighlighted-link {
-    color: rgb(110, 118, 125);
-    font-size: 15px;
-}
-
-.wd-highlighted-link {
-    color: rgb(29,161,242);
-    border-bottom-style: solid;
-    border-bottom-color: rgb(29,161,242);
-    font-size: 15px;
-}
-
-.wd-rounded-corners-all-around {
-    border-radius: 50px;
-}
-
-.wd-suggested-post {
-    padding-top: 25px;
-}
-
-.wd-trending-topic {
-    padding-top: 25px;
-    color: rgb(110, 118, 125);
-    font-size: 13px;
-    margin: 2px;
-}
-
-.wd-trending-headline {
-    color: white;
-    font-size: 13px;
-    margin: 3px;
-}
-
-.wd-trending-image {
-    width: 100px;
-    margin-right: 16px;
-    border-radius: 20px;
-    float: right;
-}
-
-.wd-trending-author {
-    padding-top: 25px;
-    color: white;
-    font-size: 13px;
-    margin: 3px;
-}
-
-.wd-title {
-    padding-left: 16px;
-    padding-top: 12px;
-    font-size: 20px;
-    color: white;
-}
-
-.wd-handle {
-    color: lightgray;
-    font-size: 13px;
-    padding-left: 16px;
-    padding-bottom: 12px;
-}
-
-.wd-title-area {
-    border-bottom-color: lightgray;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-}
-
-.wd-bookmark {
-    padding-bottom: 100px;
-}
-
-.wd-bookmark-avatar {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    margin-left: 16px;
-    margin-top: 12px;
-
-}
-
-.wd-bookmark-author {
-    color: white;
-    size: 15px;
-    padding-top: 12px;
-    float: left;
-    padding-left: 12px;
-}
-
-.wd-bookmark-handle {
-    color: lightgray;
-    padding-top: 12px;
-    padding-left: 16px;
-    size: 15px;
-    float: left;
-}
-
-.wd-bookmark-date {
-    color: lightgray;
-    size: 15px;
-}
-
-.wd-grid-col-left-sidebar {
-    width: 66px;
-    float: left;
-}
-.wd-grid-col-main-content {
-    float: left;
-}
-
-.wd-post-area {
-    color: white;
-    font-size: 15px;
-    width: 506px;
-    padding-bottom: 12px;
-    padding-left: 16px;
-}
-
-.wd-grid-row {
-    clear: both;
-}
-
-.wd-image-area {
-    border-bottom-color: lightgray;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    padding-bottom: 12px;
-}
-
-.wd-bookmark-image {
-    padding-left: 12px;
-    width: 504px;
-    height: 264px;
-    border-radius: 5%;
-}
-
-.wd-image-title {
-    float: left;
-    color: white;
-    font-size: 15px;
-    padding-left: 16px;
-    font-weight: bold;
-    padding-top: 12px;
-    width: 504px;
-}
-
-.wd-image-text {
-    float: left;
-    color: lightgray;
-    font-size: 15px;
-    padding-left: 16px;
-    padding-top: 12px;
-    width: 504px;
-}
-
-.wd-icon {
-    color: lightgray;
-    padding-right: 6px;
-}
-
-.wd-icon-label {
-    color: lightgray;
-    font-size: 15px;
-    padding-right: 72px;
-
+.wd-button-rounded {
+    border-radius: 25px;
 }
