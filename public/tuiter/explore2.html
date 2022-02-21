@@ -5,9 +5,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
     <link href="css/index.css" rel="stylesheet"/>
 </head>
-<body>
+<body class="wd-background-color">
 
-<div class="container">
+<div class="container wd-background-color">
 
     <div class="row">
         <br>
@@ -16,42 +16,42 @@
     <div class="row">
         <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
             <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                <a href="#" class="list-group-item list-group-item-action wd-background-color wd-side-nav-tab" aria-current="true">
                     <div class="col-2">
                         <i class="fab fa-twitter"></i>
                     </div>
                 </a>
 
-                <a href="home.html" class="list-group-item list-group-item-action" aria-current="true">
+                <a href="home.html" class="list-group-item list-group-item-action wd-background-color wd-side-nav-tab" aria-current="true">
                     <i class="fa fa-landmark"></i> <label class="d-none d-xl-inline">Home</label>
                 </a>
 
-                <a href="explore.html" class="list-group-item list-group-item-action active" aria-current="true">
+                <a href="explore.html" class="list-group-item list-group-item-action nav-link-active wd-background-color wd-side-nav-tab" aria-current="true">
                     <i class="fa fa-chart-bar"></i> <label class="d-none d-xl-inline">Explore</label>
                 </a>
 
-                <a href="notifications.html" class="list-group-item list-group-item-action " aria-current="true">
+                <a href="notifications.html" class="list-group-item list-group-item-action wd-background-color wd-side-nav-tab" aria-current="true">
                     <i class="fa fa-bell"></i> <label class="d-none d-xl-inline">Notifications</label>
                 </a>
 
-                <a href="messages.html" class="list-group-item list-group-item-action " aria-current="true">
+                <a href="messages.html" class="list-group-item list-group-item-action wd-background-color wd-side-nav-tab" aria-current="true">
                     <i class="fa fa-inbox"></i> <label class="d-none d-xl-inline">Messages</label>
                 </a>
 
-                <a href="bookmarks.html" class="list-group-item list-group-item-action " aria-current="true">
+                <a href="bookmarks.html" class="list-group-item list-group-item-action wd-background-color wd-side-nav-tab" aria-current="true">
                     <i class="fa fa-bookmark"></i> <label class="d-none d-xl-inline">Bookmarks</label>
                 </a>
 
-                <a href="lists.html" class="list-group-item list-group-item-action " aria-current="true">
+                <a href="lists.html" class="list-group-item list-group-item-action wd-background-color wd-side-nav-tab" aria-current="true">
                     <i class="fa fa-list"></i> <label class="d-none d-xl-inline">Lists</label>
                 </a>
 
-                <a href="profile.html" class="list-group-item list-group-item-action " aria-current="true">
+                <a href="profile.html" class="list-group-item list-group-item-action wd-background-color wd-side-nav-tab" aria-current="true">
                     <i class="fa fa-user"></i> <label class="d-none d-xl-inline">Profile</label>
                 </a>
 
 
-                <a href="more.html" class="list-group-item list-group-item-action " aria-current="true">
+                <a href="more.html" class="list-group-item list-group-item-action wd-background-color wd-side-nav-tab" aria-current="true">
                     <i class="fa fa-circle"></i> <label class="d-none d-xl-inline">More</label>
                 </a>
 
@@ -64,32 +64,35 @@
             </button>
 
         </div>
-        <div class="col-5 col-xl-5 col-lg-6 col-md-10 col-sm-10 col-xs-10">
+        <div class="col-5 col-xl-5 col-lg-6 col-md-10 col-sm-10 col-xs-10 wd-feed">
             <div class="row">
                 <div class="col-11">
-                    <input type="text" class="form-control wd-search-bar wd-search-icon" id="search-bar">
+                    <input type="text" class="form-control wd-search-bar wd-search-icon wd-input-field" placeholder="Search Tuiter" id="search-bar">
                 </div>
+
                 <div class="col-1">
-                    <i class="fa fa-cog fa-2x" style="color: rgb(29,161,242)"></i>
+                    <a href="#">
+                        <i class="fa fa-cog fa-2x" style="color: darkgray"></i>
+                    </a>
                 </div>
             </div>
             <br>
             <div class="row">
                 <ul class="nav nav-tabs nav-justified">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">For you</a>
+                        <a class="nav-link nav-link-active" href="#">For you</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Trending</a>
+                        <a class="nav-link wd-nav-link-inactive" href="#">Trending</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">News</a>
+                        <a class="nav-link wd-nav-link-inactive" href="#">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sports</a>
+                        <a class="nav-link wd-nav-link-inactive" href="#">Sports</a>
                     </li>
                     <li class="nav-item d-none d-md-inline">
-                        <a class="nav-link" href="#">Entertainment</a>
+                        <a class="nav-link wd-nav-link-inactive" href="#">Entertainment</a>
                     </li>
 
                 </ul>
@@ -103,7 +106,7 @@
                 <div class="list-group">
 
 
-                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <a href="#" class="list-group-item list-group-item-action wd-background-color " aria-current="true">
 
                         <div class="row">
                             <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/for_press_release.jpg"
@@ -125,7 +128,7 @@
                     </a>
 
 
-                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <a href="#" class="list-group-item list-group-item-action wd-background-color " aria-current="true">
 
                         <div class="row">
 
@@ -156,7 +159,7 @@
 
                     </a>
 
-                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <a href="#" class="list-group-item list-group-item-action wd-background-color " aria-current="true">
 
                         <div class="row">
 
@@ -186,7 +189,7 @@
                     </a>
 
 
-                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <a href="#" class="list-group-item list-group-item-action wd-background-color " aria-current="true">
 
                         <div class="row">
 
@@ -217,7 +220,7 @@
                     </a>
 
 
-                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <a href="#" class="list-group-item list-group-item-action wd-background-color " aria-current="true">
 
                         <div class="row">
 
@@ -256,8 +259,8 @@
         </div>
         <div class="col-3 d-none d-lg-inline">
             <div class="list-group">
-                <label class="list-group-item">Who to follow</label>
-                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                <label class="list-group-item wd-follow-bg">Who to follow</label>
+                <a href="#" class="list-group-item list-group-item-action wd-follow-bg" aria-current="true">
 
                     <div class="row">
                         <div class="col-3">
@@ -265,12 +268,12 @@
                                  class="rounded-circle img-fluid" style="height:auto"/>
                         </div>
                         <div class="col-5">
-                            CNN
+                            <span class="wd-username">CNN</span>
                             <br>
                             @CNN
                         </div>
                         <div class="col-4">
-                            <button class="btn btn-primary wd-button-rounded">
+                            <button class="btn btn-primary wd-button-rounded wd-follow-button">
                                 Follow
                             </button>
                         </div>
@@ -278,7 +281,7 @@
 
                 </a>
 
-                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                <a href="#" class="list-group-item list-group-item-action wd-follow-bg" aria-current="true">
 
                     <div class="row">
                         <div class="col-3">
@@ -286,12 +289,12 @@
                                  class="rounded-circle img-fluid" style="height:auto"/>
                         </div>
                         <div class="col-5">
-                            SpaceX
+                            <span class="wd-username">SpaceX</span>
                             <br>
                             @SpaceX
                         </div>
                         <div class="col-4">
-                            <button class="btn btn-primary wd-button-rounded">
+                            <button class="btn btn-primary wd-button-rounded wd-follow-button">
                                 Follow
                             </button>
                         </div>
@@ -299,7 +302,7 @@
 
                 </a>
 
-                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                <a href="#" class="list-group-item list-group-item-action wd-follow-bg" aria-current="true">
 
                     <div class="row">
                         <div class="col-3">
@@ -307,12 +310,12 @@
                                  class="rounded-circle img-fluid" style="height:auto"/>
                         </div>
                         <div class="col-5">
-                            Nike
+                            <span class="wd-username">Nike</span>
                             <br>
                             @Nike
                         </div>
                         <div class="col-4">
-                            <button class="btn btn-primary wd-button-rounded">
+                            <button class="btn btn-primary wd-button-rounded wd-follow-button">
                                 Follow
                             </button>
                         </div>
@@ -320,7 +323,7 @@
 
                 </a>
 
-                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                <a href="#" class="list-group-item list-group-item-action wd-follow-bg" aria-current="true">
 
                     <div class="row">
                         <div class="col-3">
@@ -328,12 +331,12 @@
                                  class="rounded-circle img-fluid" style="height:auto"/>
                         </div>
                         <div class="col-5">
-                            AirBNB
+                            <span class="wd-username">AirBNB</span>
                             <br>
                             @AirBNB
                         </div>
                         <div class="col-4">
-                            <button class="btn btn-primary wd-button-rounded">
+                            <button class="btn btn-primary wd-button-rounded wd-follow-button">
                                 Follow
                             </button>
                         </div>
