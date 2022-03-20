@@ -1,4 +1,4 @@
-export default [
+const posts = [
     {
         userImage: 'https://www.politico.eu/cdn-cgi/image/width=1320,height=971,fit=crop,quality=80,format=auto,onerror=redirect/wp-content/uploads/2022/02/27/GettyImages-1234651136.jpg',
         userName: 'Elon Musk',
@@ -23,4 +23,6 @@ export default [
         likes: '4K',
     }
 
-]
+];
+
+export default posts;
