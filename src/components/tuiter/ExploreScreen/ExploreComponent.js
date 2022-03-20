@@ -10,7 +10,7 @@ const ExploreComponent = () => {
                 </div>
 
                 <div className="col-1">
-                    <a href="#">
+                    <a href="/">
                         <i className="fa fa-cog fa-2x"></i>
                     </a>
                 </div>
@@ -22,25 +22,25 @@ const ExploreComponent = () => {
 
 
                     <li className="nav-item">
-                        <a className="nav-link active" href="#">For you</a>
+                        <a className="nav-link active" href="/">For you</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Trending</a>
+                        <a className="nav-link" href="/">Trending</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">News</a>
+                        <a className="nav-link" href="/">News</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Sports</a>
+                        <a className="nav-link" href="/">Sports</a>
                     </li>
                     <li className="nav-item d-none d-md-inline">
-                        <a className="nav-link" href="#">Entertainment</a>
+                        <a className="nav-link" href="/">Entertainment</a>
                     </li>
 
 
 
            </ul>
-           <a href="#" className="list-group-item list-group-item-action wd-background-color " aria-current="true">
+           <a href="/" className="list-group-item list-group-item-action wd-background-color " aria-current="true">
                 
 
                     <div className="row">
