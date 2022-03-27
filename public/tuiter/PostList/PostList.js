@@ -9,7 +9,7 @@ const PostSummaryList = () => {
             return(PostItem(posts));
         }).join('')
     }
-            </ul>
+    </ul>
 `); }
 
 export default PostSummaryList;
