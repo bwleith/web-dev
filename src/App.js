@@ -7,6 +7,8 @@ import Index from './components/labs';
 import Tuiter from './components/tuiter';
 import HomeScreen from './components/tuiter/HomeScreen';
 import ExploreScreen from './components/tuiter/ExploreScreen';
+import Profile from './components/tuiter/Profile';
+import EditProfile from './components/tuiter/EditProfile';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
@@ -27,6 +29,10 @@ function App() {
                              element={<HomeScreen/>}/>
                       <Route path="explore"
                              element={<ExploreScreen/>}/>
+                      <Route path="profile"
+                             element={<Profile/>}/>
+                      <Route path="editprofile"
+                             element={<EditProfile/>}/>
                   </Route>
 
 
