@@ -35,7 +35,6 @@ function App() {
                              element={<EditProfile/>}/>
                   </Route>
 
-
               </Routes>
           </div>
       </BrowserRouter>
