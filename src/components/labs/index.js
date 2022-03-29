@@ -4,6 +4,7 @@ import Classes from './classes';
 import Styles from './styles';
 import ConditionalOutput from './conditional-output';
 import ToDoList from './todo/todo-list.js';
+import ReduxExamples from './redux-examples';
 
 const Index = () => {
     return(
@@ -14,6 +15,7 @@ const Index = () => {
                 <ConditionalOutput/>
                 <Styles/>
                 <Classes/>
+                <ReduxExamples/>
             </div>
 
 

@@ -1,9 +1,10 @@
 import React from 'react';
 import WhoToFollowListItem from "./WhoToFollowListItem.js";
-import who from "./who.js"
+import {useSelector} from "react-redux";
 
-const Index = () => {
-    return (
+const WhoToFollowList = () => {
+    const who = useSelector(state => state.who);
+    return(
         <div>
             <ul className="list-group">
                 {
@@ -15,7 +16,7 @@ const Index = () => {
                 }
             </ul>
         </div>
-); }
-
-export default Index;
+    );
+};
+export default WhoToFollowList;
 

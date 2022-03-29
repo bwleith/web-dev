@@ -118,3 +118,7 @@
 .wd-feed {
   border-color: lightgray;
 }
+
+.wd-profile-image-rounded {
+  border-radius: 50%;
+}

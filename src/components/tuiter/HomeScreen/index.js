@@ -1,7 +1,8 @@
 import React from 'react';
 import NavigationSidebar from "../NavigationSidebar/";
 import PostSummaryList from "../PostSummaryList";
-import PostList from "../PostList/";
+import TuitList from "../TuitList/TuitList.js";
+import WhatsHappening from "../WhatsHappening/WhatsHappening.js";
 
 
 const HomeScreen = () => {
@@ -11,7 +12,8 @@ const HomeScreen = () => {
                 <NavigationSidebar active="home"/>
             </div>
             <div className="col-10 col-md-10 col-lg-7 col-xl-6">
-                 <PostList/>
+                 <WhatsHappening/>
+                 <TuitList/>
             </div>
             <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
                 <PostSummaryList/>
