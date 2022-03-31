@@ -1,36 +1,35 @@
+import {updateTuit} from "../../../actions/tuits-actions.js";
 import {useDispatch} from "react-redux";
 import React from "react";
 
 const TuitStats = ({tuit}) => {
     const dispatch = useDispatch();
-    const likeTuit = () => {
-        dispatch({type: 'like-tuit', tuit});
-    };
     return (
         <div>
-            <span onClick={likeTuit}>
-                {
-                    tuit.liked &&
-                    <i className="fas fa-heart me-1"
-                       style={{color: 'red'}}></i>
-                }
-                {
-                    !tuit.liked &&
-                    <i className="far fa-heart me-1"></i>
-                }
-                {tuit.stats && tuit.stats.likes}
+            <span>
+                Likes: {tuit.likes}
+                <i onClick={() => updateTuit(dispatch, {
+                    ...tuit,
+                    likes: tuit.likes + 1
+                })} className="far fa-thumbs-up ms-2"/>
             </span>
 
-            <span className="col-3">
-                <i className="fa fa-comment"> </i> {tuit.stats.comments}
+            &nbsp;
+
+            <span>
+                Dislikes: {tuit.dislikes}
+                <i onClick={() => updateTuit(dispatch, {
+                    ...tuit,
+                    dislikes: tuit.dislikes + 1
+                })} className="far fa-thumbs-down ms-2"/>
             </span>
 
-            <span className="col-3">
-                <i className="fa fa-retweet"> </i> {tuit.stats.retuits}
-            </span>
+            &nbsp;
+            &nbsp;
+            &nbsp;
 
-            <span className="col-3">
-                <i className="fa fa-share"></i>
+            <span>
+                <i className="fa fa-share"/>
             </span>
 
 

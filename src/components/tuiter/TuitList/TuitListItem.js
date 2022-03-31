@@ -1,5 +1,6 @@
 import React from 'react';
 import {useDispatch} from "react-redux";
+import {deleteTuit} from "../../../actions/tuits-actions.js";
 import TuitStats from "./TuitStats.js";
 
 const TuitListItem = (
@@ -8,17 +9,13 @@ const TuitListItem = (
     }
 ) => {
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        console.log("deleting tuit...")
-        dispatch({type: 'delete-tuit', tuit})
-    };
     return (
         <div className="list-group-item list-group-item-action" aria-current="true">
                 <div className="row">
 
                     <div className="col-1">
                         <img
-                            src={tuit.avatarImage}
+                            src="https://cms.qz.com/wp-content/uploads/2017/03/twitter_egg_blue.png"
                             className="img-fluid img-responsive rounded-circle"
                             alt={"loading"}
                         />
@@ -31,12 +28,12 @@ const TuitListItem = (
                         </span>
                         -
                         <span className="wd-time">
-                           @{tuit.handle}
+                           @{tuit.postedBy.username}
                         </span>
 
-                        <i onClick={() =>
-                            deleteTuit(tuit)}
-                            className="fas fa-remove fa-2x fa-pull-right"/>
+                        <i className="fas fa-remove float-end"
+                           onClick={() => deleteTuit(
+                               dispatch, tuit)}/>
 
                         <div>
                             {tuit.tuit}
@@ -46,7 +43,7 @@ const TuitListItem = (
 
 
                         <div>
-                            <img src={tuit.avatarImage}
+                            <img src=""
                                  className="img-fluid"
                                  alt=""
                             />
@@ -59,8 +56,8 @@ const TuitListItem = (
 
 
 
+                            <TuitStats tuit={tuit}/>
 
-                            <TuitStats tuit = {tuit}/>
 
                         </div>
 
