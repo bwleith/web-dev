@@ -12,7 +12,10 @@ const WhatsHappening = () => {
           <textarea
                     onChange={(e) =>
                         setNewTuit({...newTuit,
-                            tuit: e.target.value})}
+                            tuit: e.target.value,
+                            likes: 0,
+                            postedBy: {username: 'Default User'}
+                        })}
           >
           </textarea>
             <button

@@ -14,15 +14,6 @@ const TuitStats = ({tuit}) => {
                 })} className="far fa-thumbs-up ms-2"/>
             </span>
 
-            &nbsp;
-
-            <span>
-                Dislikes: {tuit.dislikes}
-                <i onClick={() => updateTuit(dispatch, {
-                    ...tuit,
-                    dislikes: tuit.dislikes + 1
-                })} className="far fa-thumbs-down ms-2"/>
-            </span>
 
             &nbsp;
             &nbsp;
